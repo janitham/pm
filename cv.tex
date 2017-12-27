@@ -17,36 +17,32 @@
 }
 \addbibresource{bibliography.bib}
 \RequirePackage{xcolor}
-\definecolor{pblue}{HTML}{0395DE}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage[usenames, dvipsnames]{color}
 
 \begin{document}
 
-
-% Fake text to add separator
-\vspace{1.15cm}
-\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
-.....
-}}
-
 % In the aside, each new line forces a line break
 \begin{aside}
-  \includegraphics[scale=0.40]{img/meg2.jpg}
+\color{blue}
+  \includegraphics[scale=0.45]{img/meg.jpg}
     ~
-  \header{Martin}{Othamar}
-      {full-stack developer}
+  \header{Janitha}{Madushant}
+      {Software Engineer}
    ~
-  	  
-  \vspace{0.65cm}
   \section{Civil status}
-    Married
+    {\whitebodyfont Married}
   	~
   \section{Address}
-    Trollkleiva 8\\
+    {\whitebodyfont Trollkleiva 8\\
     4638 Kristiansand S\\
-    Norway
+    Norway}
     ~
   \section{Phone}
-    +47 47 35 60 90
+    {\whitebodyfont +47 47 35 60 90}
     ~
   \section{Mail}
     \underline{\href{mailto:martin@othamar.net}{martin@othamar.net}}
@@ -54,7 +50,7 @@
   \section{Web}
   	%\underline{\href{http://martinothamar.github.io}{martinothamar.github.io}}
 	\vspace{0.10cm}
-    \underline{\href{https://no.linkedin.com/in/martinothamar}{linkedin.com/in/martinothamar}}
+    \underline{\href{https://no.linkedin.com/in/martinothamar}{{\whitebodyfont linkedin.com/in/martinothamar}}}
 	\vspace{0.10cm}
     \underline{\href{https://stackoverflow.com/story/martinothamar}{stackoverflow.com/story}}
 	\vspace{0.10cm}
@@ -66,7 +62,7 @@
     \includegraphics[scale=0.22]{img/programming.png}
     ~
   \section{OS Preference}
-    \asidelist{\textbf{mac OS}}
+    \asidelist{mac OS}
     {\includegraphics[scale=0.30]{img/star.png}
     \includegraphics[scale=0.30]{img/star.png}
     \includegraphics[scale=0.30]{img/star.png}
@@ -87,7 +83,6 @@
     ~
 \end{aside}
 
-\vspace{0.75cm}
 \section{Experience}
 \begin{entrylist}
   \entry
