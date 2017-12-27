@@ -103,14 +103,14 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \newcommand{\header}[3]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
-      \fontsize{30pt}{62pt}\color{header}%
+  \begin{tikzpicture}[scale=2]
+   
+    \node [draw=none,fill=none] (name) at (current page.west) {%
+      \fontsize{15pt}{31pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{pblue}%
+      \fontsize{7pt}{12pt}\color{pblue}%
       \bodyfont #3%
     };
   \end{tikzpicture}
