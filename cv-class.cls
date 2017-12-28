@@ -52,7 +52,6 @@ ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf]
 {texgyreheros-regular.otf}
 
-
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
 ItalicFont=texgyreheros-italic.otf,
@@ -92,11 +91,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[scale=2]
     \node [draw=none,fill=none] (name) at (current page.west) {%
-      \fontsize{15pt}{31pt}\color{white}%
+      \fontsize{16pt}{32pt}\color{white}%
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
-      \fontsize{7pt}{12pt}\color{white}%
+      \fontsize{10pt}{12pt}\color{white}%
       \bodyfont #3%
     };
   \end{tikzpicture}
