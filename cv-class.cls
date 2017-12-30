@@ -41,7 +41,6 @@
 % Fonts %
 %%%%%%%%%
 
-%%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
@@ -143,7 +142,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \LARGE\headingfont\large\color{headercolor}%
     \@sectioncolor #1%
   }
   \par\vspace{\parskip}
@@ -194,7 +193,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{blue} ##1}\newline
+    \par\vspace{\baselineskip}{\Large\headingfont\normalsize\color{blue} ##1}\newline
   }		%			Width Left Top
   \begin{textblock}{4.8}(1, 0.5)
   \begin{flushleft}
