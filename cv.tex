@@ -211,23 +211,38 @@
 
 \section{PROJECTS}
 \begin{entrylist}
-	\entry
+    \entry
     {}
-	{Snooper}    
-    {Delivery Information Management Application}
-	{This is a sub-project of "Stacker" project. This application stores the delivery information using a trigger from "Stacker" tool through it's RestfulAPI and graphically represents information using "AngularJs" based front end application. Backend has implemented Spring-Cloud based micro-services. \\"Redis" implementation used as Hibernate 2nd Level caching. "Elastic Search", "Logstash" \& "Kibana" integration(ELK) is used to monitor the logs, "Grafana" \& "Prometheus" integration used to monitor the states of the application. Application containerized using "Docker", "Docker-maven-plugin", Jenkins \& Jenkinsfile used to build the application. Docker-Compose is used to deploy the application. \textbf{(Java-8, Spring-cloud, Spring-boot, zuul-proxy, Hibernate, AngularJs, Docker, Docker-Compose, Gulp, Micro-Services, SpringJunit, SonarQube, MySql, Redis, Jenkins, Jenkinsfile, Kibana, Logstash, Elastic-search, Prometheus, Grafana, Git  Linux)}}
+	{Tekton}
+    {Release Automation Tool}
+	{Release automation tool based on "Graph Theory". Over the time "Cosmic" modules have introduced cyclic dependencies (Maven) through, developing over "transitive dependencies" in the modules.
 	\\
-	\entry
-    {}
-	{Stacker}    
-    {Delivery Automation Tool}
-	{This is a maven-plugin which generates multi-modules pom structure using BOM(Baseline POM) and MetaData(Artifact) according to different types of 			modules in the BOM(Dependencies). The rest is done by the maven-plugins have configured in the POMs. This main plugin is configured in a Jenkins Job 		and all of plugins have released to nuxus. \textbf{(Java-8, Maven-plugins, Jenkins, Jenkins-pipelines, Junit, Mokito, SonarQube)}}
+	This became messy \& Strongly Connected Directed Graph to the release phase. Release engineers were struggling to determine the releasing order. Finally a solution was introduced based on graph theories \& implemented accordingly to micro-services architecture using TDD.
+	\\
+	"Trajan’s SCC" Algorithm was used to determine cycles \& UI introduced to resolve cycles and to provide “Directed Acyclic Graph”
+	in the releasing phase to automate/determine release order.
+	Parallel processing, Caching, Messaging queues \& Multi-Threading were used to improve the performance of the tool.
+	\\
+    \textbf{Apache-Aether, Spring-Boot, RabbitMq, Redis, ReactJs, Docker, Kubernetes, Helm-Charts, Jenkins-Pipeline, Nginx, NodeJs, Maven, Junit, Mockito, TDD \& Algorithms.}
+	}
+	\\
 	\end{entrylist}
 \newpage
 \begin{aside}
 \end{aside}
 
 \begin{entrylist}
+\entry
+    {}
+	{Stacker}
+    {Delivery Automation Tool}
+	{This is a maven-plugin which generates multi-modules pom structure using BOM(Baseline POM) and MetaData(Artifact) according to different types of 			modules in the BOM(Dependencies). The rest is done by the maven-plugins have configured in the POMs. This main plugin is configured in a Jenkins Job 		and all of plugins have released to nuxus. \textbf{(Java-8, Maven-plugins, Jenkins, Jenkins-pipelines, Junit, Mokito, SonarQube)}}
+	\entry
+    {}
+	{Snooper}
+    {Delivery Information Management Application}
+	{This is a sub-project of "Stacker" project. This application stores the delivery information using a trigger from "Stacker" tool through it's RestfulAPI and graphically represents information using "AngularJs" based front end application. Backend has implemented Spring-Cloud based micro-services. \\"Redis" implementation used as Hibernate 2nd Level caching. "Elastic Search", "Logstash" \& "Kibana" integration(ELK) is used to monitor the logs, "Grafana" \& "Prometheus" integration used to monitor the states of the application. Application containerized using "Docker", "Docker-maven-plugin", Jenkins \& Jenkinsfile used to build the application. Docker-Compose is used to deploy the application. \textbf{(Java-8, Spring-cloud, Spring-boot, zuul-proxy, Hibernate, AngularJs, Docker, Docker-Compose, Gulp, Micro-Services, SpringJunit, SonarQube, MySql, Redis, Jenkins, Jenkinsfile, Kibana, Logstash, Elastic-search, Prometheus, Grafana, Git  Linux)}}
+	\\
 \entry
     {}
 	{ART}    
