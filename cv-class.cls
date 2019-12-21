@@ -88,16 +88,16 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \newcommand{\header}[3]{%
-  \begin{tikzpicture}[scale=2]
+  %\begin{tikzpicture}[scale=2]
     \node [draw=none,fill=none] (name) at (current page.middle) {%
       \fontsize{16pt}{32pt}\color{white}%
       {\thinfont #1}{\bodyfont  #2}
     };
-    \node [anchor=north] at (name.south) {%
-      \fontsize{12pt}{12pt}\color{white}%
-      \bodyfont #3%
-    };
-  \end{tikzpicture}
+    %\node [draw=none,fill=none] (namee) at (current page.middle) {%
+     % \fontsize{12pt}{12pt}\color{white}%
+      %\bodyfont #3%
+    %};
+%  \end{tikzpicture}
   \vspace{-2\parskip}
 }
 
